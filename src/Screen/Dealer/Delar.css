@@ -1,0 +1,88 @@
+.container {
+    max-width: 900;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #40a9ff;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.search-input {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+
+.ant-table-wrapper {
+    margin-bottom: 20px;
+}
+
+.ant-table-cell {
+    padding: 8px;
+    vertical-align: top;
+}
+
+.ant-table-tbody > tr > td {
+    padding: 12px;
+}
+
+.ant-table-thead > tr > th {
+    background-color: #f0f2f5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ant-table-pagination {
+    text-align: center;
+}
+
+.ant-pagination-item {
+    margin-right: 0;
+}
+
+.ant-pagination-prev, .ant-pagination-next {
+    margin-right: 8px;
+}
+
+.ant-pagination-prev-arrow, .ant-pagination-next-arrow {
+    color: #1890ff;
+}
+
+.ant-pagination-item-active {
+    border-color: #1890ff;
+    color: #1890ff;
+}

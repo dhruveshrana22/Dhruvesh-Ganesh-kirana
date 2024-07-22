@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #40585fc0;
+  }
+
+  #container {
+    max-width: 550px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #containerPurchase {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .custom-datalist {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-datalist option {
+    padding: 5px 10px; /* Add padding to options */
+    background-color: #f4f4f4; /* Background color of options */
+    border-bottom: 1px solid #ddd; /* Add bottom border to separate options */
+  }
+  
+  .custom-datalist option:last-child {
+    border-bottom: none; /* Remove bottom border from last option */
+  }
+  
+  .custom-datalist option:hover {
+    background-color: #e0e0e0; /* Background color of hovered option */
+  }
+  
+  .custom-datalist option:focus {
+    outline: none; /* Remove default focus outline */
+    background-color: #ccc; /* Background color of focused option */
+    color: #fff; /* Text color of focused option */
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+  .billamt{
+    font-weight:  bold;
+    padding-top: 10%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: calc(80% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  /* 
+  input[type="number"] {
+    width: calc(100% - 12px);
+  }  */
+
+  #invoiceForm label,
+  #invoiceForm input[type="text"],
+  #invoiceForm input[type="number"] {
+    display: inline-block;
+    width: calc(20% - 12px); /* Set width to 20% for each field */
+    margin-right: 20px; /* Add some spacing between fields */
+  }
+
+  #invoiceForm label {
+    width: 18%; /* Adjust label width */
+    text-align: right; /* Align labels to the right for better alignment */
+  }
+
+  #invoiceForm input[type="text"],
+  #invoiceForm input[type="number"] {
+    width: calc(20% - 12px); /* Adjust input width */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  .goBackButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .goBackButton:hover {
+    background-color: #0056b3;
+  }
+  
+  #totalBillAmount {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #Container2 { height: 100%; 
+    padding-top: 50px;
+     padding-right: 50px ;
+    width: 50%;
+    background-color: #f5f8f9;
+    border-radius: 20px;
+    padding: 20px;
+    }
+    .additional-details{
+      margin-top: -10;
+    }
+    @media print {
+      /* Hide the print button and container */
+      button {
+        display: none;
+      }
+      #container {
+        display: none;
+      }
+      
+       
+      #Container2 {
+        width: 250mm; 
+        /* height: 210mm;   */
+        padding-top: 0;  
+        padding-right: 0;  
+        padding-bottom: 0;  
+        padding-left: 0;  
+        margin: 0 auto;  
+        font-size: 10px;
+      }
+    
+      header, footer {
+        display: none !important;
+      }
+      
+  }
+
+  
+  
+  @media screen and (max-width: 768px) {
+    #Main{
+      width: 100%;
+    }
+    #container{
+      width: 100%;
+    }
+    #containerPurchase{
+      width: 100%;
+      padding: 10;
+    }
+    #invoiceForm{
+      width: 100%;
+    }
+    input{
+      width: 100%;
+    }
+    .formfild{
+      width: 100%;
+    }
+    #PurchaseSale{
+      flex-wrap: wrap;
+    }
+    #Container2{
+      width: 100%;
+    }
+  }
+  

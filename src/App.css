@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #f2f2f2;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  width: 160px;
+  z-index: 1;
+  margin-top: 45px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  float: none;
+  color: #f2f2f2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.content {
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+
+/* CSS Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to welcome text */
+.welcome-text {
+  animation: fadeIn 1s ease-in-out forwards;
+  color: #333; /* Text color */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-align: center; /* Text alignment */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+/* Apply animation to h2 */
+h2 {
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+/* Apply animation to p */
+p {
+  animation: scaleIn 1s ease-in-out forwards;
+}
+
+/* CSS Animation for sliding in from the left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* CSS Animation for sliding in from the right */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to h3 elements */
+#kalpesh {
+  animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+#Mehule {
+  animation: slideInFromLeft 3s ease-in-out forwards;
+}
+
+/* Your existing styles */
+
+/* Toast Notification Styles */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  min-height: 64px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.Toastify__toast--success {
+  background-color: #51a351;
+}
+
+.Toastify__close-button {
+  color: #fff;
+  font-weight: bold;
+}
+
+.Toastify__close-button:hover {
+  color: #fff;
+}
+
+.Toastify__progress-bar {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 768px) {
+  .flex-scrollable {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .scroll-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .left-arrow {
+    left: 5px;
+  }
+
+  .right-arrow {
+    right: 5px;
+  }
+}

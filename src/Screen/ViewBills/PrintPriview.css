@@ -1,0 +1,147 @@
+/* .print-preview-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.invoice-details, .invoice-items, .additional-details {
+    margin-bottom: 20px;
+}
+
+.invoice-details{
+    display: flex;  justify-content: space-between;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+    #container {
+        display: none;
+    }
+} */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #777373;
+    color: white;
+}
+.delete-btn {
+    padding: 6px 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#remainingcredit{
+   font-size: 30px;
+}
+.delete-btn:hover {
+    background-color: #ff7875;
+}
+#amounts{
+    color: white;
+}
+@media print {
+    #button{
+        display: none;
+        overflow-x: none;
+    }
+     th{
+        font-size: 10px;
+     }
+     table{
+        font-size: 15px;
+        width: 100%;
+        margin: auto;
+    }
+    #amounts{
+        color: black;
+    }
+    
+    .non-printable {
+      display: none !important;
+    }
+    #action {
+      display: none ;
+    }
+    #tables{
+        gap: 20px;
+    }
+     #remainingcredit{
+        font-size: 15px;
+        border: none;
+        width: auto;
+        display: none;
+     }
+     #CustomerDetail{
+        margin-top: auto;
+     }
+  }
+  @media screen and (max-width: 768px) {
+    #mainCtr{
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #tables{
+        font-size: 12px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+    #x{
+        font-size: 10px;
+    }
+    #remainingcredit{
+        font-size: 15px;
+        font-weight: 700;
+     }
+  }
+  
