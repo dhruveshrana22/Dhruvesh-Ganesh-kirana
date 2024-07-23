@@ -339,6 +339,7 @@ const InvoiceInput = () => {
       productPrice,
       quantity,
       amount,
+      profit,
     };
     // dispatch(updateInvoiceItem(editingIndex, updatedItemdata));
     const updatedInvoiceItems = [...invoiceItems];
